@@ -5,6 +5,7 @@ const parentRef = ()=> {
   const inputRef = useRef<HTMLInputElement | null>(null)  
   const [input, setInput] = useState("")
   const childRef = useRef<HTMLInputElement | null>(null)
+  const funcRef = useRef(null)
   useEffect(()=> {
     console.log("Input=>", input)
   })
@@ -26,6 +27,7 @@ const parentRef = ()=> {
     inputRef.current?.focus()
     }
   }
+
     return <div>
         <ChildRef ref={childRef} />
         <button onClick={handleClick} >Click Me</button>

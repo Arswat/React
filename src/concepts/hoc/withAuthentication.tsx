@@ -1,5 +1,4 @@
 
-
 const isAuthenticated = true
 
 export default function withAuthentication (Component:any) {
@@ -10,4 +9,3 @@ export default function withAuthentication (Component:any) {
      return <Component userId="123" {...props}/>
    }
 }
-
